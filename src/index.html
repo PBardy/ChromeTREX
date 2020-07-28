@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Dino</title>
+
+  <link rel="stylesheet" href="./public/css/animations.css" />
+  <link rel="stylesheet" href="./public/css/transitions.css" />
+  <link rel="stylesheet" href="./public/css/fonts.css" />
+  <link rel="stylesheet" href="./public/css/main.css" />
+  <link rel="stylesheet" href="./public/css/app.css" />
+  <link rel="stylesheet" href="./public/css/media.css" />
+
+  <script src="./public/js/main.js"></script>
+  <script src="./public/js/app.js" type="module" defer></script>
+</head>
+
+<body>
+
+  <!-- App -->
+  <div class="App Vbox Center">
+    <div class="App-Container Vbox">
+      <div class="Hbox">
+        <h3>Chrome T-Rex Game</h3>
+      </div>
+      <div class="Padding"></div>
+      <div class="Hbox">
+        <div class="Hbox">
+          <span>Show Hitboxes</span>
+          <input type="checkbox" class="js" id="ShowHitboxes" />
+        </div>
+        <div class="Padding"></div>
+        <div class="Hbox">
+          <span>Enable collisions</span>
+          <input type="checkbox" class="js" id="EnableCollisions" checked/>
+        </div>
+        <div class="Padding"></div>
+        <div class="Hbox">
+          <span>Use AI</span>
+          <input type="checkbox" class="js" id="UseAI" />
+        </div>
+      </div>
+      <div class="Padding"></div>
+      <div class="Game-Container">
+        <canvas class="js" id="Canvas"></canvas>
+      </div>
+      <div class="Padding"></div>
+      <div class="Hbox">
+        <p>
+          Use the <b>W</b> and <b>S</b> keys or the <b>UP</b> and <b>DOWN</b> arrows to control the dinosaur. Jump
+          to avoid cacti, and duck to avoid the pterodactyls. Press any key to start. Press the <b>R</b> key to
+          restart.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spritesheets -->
+  <img class="js" id="Spritesheet" src="./public/assets/img/spritesheet.png" />
+
+</body>
+
+</html>
